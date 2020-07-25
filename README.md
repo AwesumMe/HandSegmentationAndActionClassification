@@ -17,7 +17,7 @@ Divided the data in the ratio of 80% train, 10% validation, 10% test. Used Dicel
 Classification:
 
 Data Collection and Preprocessing:
-In the assignment we were required to classify as stirring or adding ingredients. But what about the frames where none of the action was performed? Hence I decided to have 3 classes of data stirring, adding ingredients and unknown.
+We have to classify as stirring or adding ingredients. But what about the frames where none of the action was performed? Hence I decided to have 3 classes of data stirring, adding ingredients and unknown.
 Coming to data collection as there was no dataset available I decided to crawl youtube videos. The test video was from Tasty channel. Hence, I started to search for similar videos on their channel. Soon I found a 32 mins long video on one pot cooking. I downloaded the video using youtube-dl and wrote a small tool on the jupyter notebook using ipywidgets. I sampled the video at 2 fps. It shows the images one by one and asks you to select the class. Based on your selection, it dumps the frame in that particular class folder. There are in total 3900 frames approx. I annotated around 1200 frames myself and used it for training. Below is a snippet of the tool.
 
 Model Selection:
